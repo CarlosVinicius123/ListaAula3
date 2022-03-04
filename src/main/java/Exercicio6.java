@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Exercicio5 {
+public class Exercicio6 {
 
     public static void main(String[] args) {
 
@@ -17,8 +17,10 @@ public class Exercicio5 {
             System.out.println("Numero que deseja chutar:");
             chute = entrada.nextInt();
 
-            if (chute != numeroAleatorio) {
-                System.out.println("Errou o chute");
+            if (chute < numeroAleatorio) {
+                System.out.println("Chute menor que o numero aleatorio");
+            } else if (chute > numeroAleatorio){
+                System.out.println("Chute maior que o numero aleatorio");
             }
 
 
